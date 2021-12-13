@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <title>Services & pricing</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="css/project-1.css">
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
 </head>
 
-<body>
+<body style="background-color: violet;">
     <div id="main">
-        <div class="navbar">
-            <a href="home.html" style="font-family: 'catFont';">Catgarten</a>
-            <div class="dropdown">
-              <button class="dropbtn">Us<i class="fa fa-caret-down"></i></button>
-              <div class="dropdown-content">
-                <a href="what.html">What are we ?</a>
-                <a href="where.html">Where are we ?</a>
-              </div>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html" style="font-family: 'catFont';">Catgarten</a>
             </div>
-            <a href="customers.html">Happy customers</a>
-            <a href="service_pricing.html">Services & pricing</a>
-            <a href="contact.html">Contact us</a>
-        </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">Us
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="what.html">What are we ?</a></li>
+                        <li><a href="where.html">Where are we ?</a></li>
+                    </ul>
+                </li>
+                <li><a href="customers.html">Happy customers</a></li>
+                <li><a href="service_pricing.html">Services & pricing</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
         <div class="display">
             <h1 class="title">Services & pricing</h1>
             <p>The base price of our care service is 3$ per day of care but some upgrades are available :</p>
             <ul>
                 <li>For an extra 2$ per day, we will provide catnip for your cat (up to 20 gramms per day)</li>
-                <li>For an extra 10$ per day, we will take extra care of your cat, this includes extra scraching session up to 3 hours per day, access to the mega cat tree (more than 30 feethigh)</li>
+                <li>For an extra 10$ per day, we will take extra care of your cat, this includes extra scraching session
+                    up to 3 hours per day, access to the mega cat tree (more than 30 feethigh)</li>
             </ul>
         </div>
     </div>

@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <title>Who we are</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="css/project-1.css">
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
 </head>
 
-<body>
+<body style="background-color: violet;">
     <div id="main">
-        <div class="navbar">
-            <a href="home.html" style="font-family: 'catFont';">Catgarten</a>
-            <div class="dropdown">
-              <button class="dropbtn">Us<i class="fa fa-caret-down"></i></button>
-              <div class="dropdown-content">
-                <a href="what.html">What are we ?</a>
-                <a href="where.html">Where are we ?</a>
-              </div>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html" style="font-family: 'catFont';">Catgarten</a>
             </div>
-            <a href="customers.html">Happy customers</a>
-            <a href="service_pricing.html">Services & pricing</a>
-            <a href="contact.html">Contact us</a>
-        </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">Us
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="what.html">What are we ?</a></li>
+                        <li><a href="where.html">Where are we ?</a></li>
+                    </ul>
+                </li>
+                <li><a href="customers.html">Happy customers</a></li>
+                <li><a href="service_pricing.html">Services & pricing</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
         <div class="display">
             <h1 class="title">What is Catgarten ?</h1>
-            <p>You want to go on holiday or have to go away but no one to look after your cat? Catgarten is there for you, you drop your cat(s) off and pick them up on your return</p>
+            <p>You want to go on holiday or have to go away but no one to look after your cat? Catgarten is there for
+                you, you drop your cat(s) off and pick them up on your return</p>
             <img src="images/house.jpg" width="960px">
-            <p>In a big house (4000 sq feet) with garden, your cat(s) will have all the space they need, and we'll make sure nothing bad happens to them.</p>
+            <p>In a big house (4000 sq feet) with garden, your cat(s) will have all the space they need, and we'll make
+                sure nothing bad happens to them.</p>
         </div>
     </div>
 </body>
